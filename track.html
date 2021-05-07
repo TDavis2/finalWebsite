@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This sentence will appear under the link in search engine results.">
+	<meta name="keywords" content="list,of,words,separated,by,commas,that,describe,your,site">
+	<meta name="author" content="Your name goes here">
+
+	
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Tab Title -->
+	<title> Track </title>
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="styles/track.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+
+	<!-- slicknav -->
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>   <!-- Link to jQuery Content Delivery Network - Necessary for SlickNav to work correctly -->
+	<script src="js/jquery.slicknav.min.js"></script>                     <!-- Link to the slicknav file inside the js folder - Necessary for SlickNav to work correctly -->
+
+	<!-- slicknav javascript - this javascript code will use the UL inside the nav_menu tag to build the same menu in slickNav format -->
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('.nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    </script>
+
+</head>
+
+
+<body>
+	<header class="clearfix">
+		<h2><a href="index.html"> Home </a></h1>
+		
+	</header>
+
+	<nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+        	<li><a href="football.html"> Football </a></li>
+        	<li><a href="baseball.html"> Baseball </a></li>
+        	<li><a href="track.html"> Track </a></li>
+			<li><a href="family.html"> Family </a></li>
+			
+    	</ul>
+	</nav>
+	<nav class="bookmarks">
+		<ul>
+			<li><a href="#youth"> Senior Season </a></li>
+			<li><a href="#highschool"> 4x400 Relay </a></li>
+			<li><a href="#college"> SMR Relay </a></li>
+		</ul>
+	</nav>
+
+	<section id="homepage">
+		<h5> Track </h5>
+
+			<h6 id="youth"> Senior Season </h6>
+			<p class="pimgLeft"><img src="images/Track/IMG_7212.jpg"></p>
+
+			<div class="ptxtRight">
+				<h7> Individual Events</h7>
+				
+				<p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+
+				<h7>Record Setting Relay Teams</h7>
+				<p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+			</div>
+
+			<h6 id="highschool"> 4x400 Relay </h6>
+			
+			<div class="ptxtRight">
+				<h7>Yale Invitational</h7>
+				
+				<video width="100%" height="100%" controls>
+					<source src="images/Track/IMG_2693.mov">
+				Your browser does not support the video tag.
+				</video>
+
+				<h7> SWC Conference Championship </h7>
+				<video width="100%" height="100%" controls>
+					<source src="images/Track/IMG_2722.mov">
+				Your browser does not support the video tag.
+				</video>
+
+				<h7> Relay Team Members </h7>
+				<ol>
+					<li> 1st Leg - Tyler Davis </li>
+					<li> 2nd Leg - Brad Bornn </li>
+					<li> 3rd Leg - Shawn Sato </li>
+					<li> 4th Leg - Brett Scheutt </li>
+				</ol>
+
+				<h7> Accolades </h7>
+				<ol>
+					<li> - Set School Record for 4x400 time </li>
+					<li> - 2nd Place Yale Invitational </li>
+					<li> - 4th Place SWC Conference Championship </li>
+					<li> - 5th Place Overall Class L State Championship </li>
+				</ol>
+				<h7> Story </h7> 
+				<p>
+					As you can see in the above videos, our relay team struggled with having clean handoffs (especially in big races). The Yale Invitational was our first big 4x400 race of the season and in it we dropped the baton and as a result came in second behind one of our rivals. When our coach saw us after the race she took our medals for second place away from us and said "you can have these back when you beat Weston". Funny enough when we raced Weston again in the conference championship we again dropped the baton and came in 4th as a result. Our coach was not happy with us as both races we could have won easily with the team we ahd had we not dropped the baton. However, in the state championship meet we finally made three clean handoffs and placed fith overall, setting our schools record for the fastest 4x400 time ever. 
+				</p> 
+			</div>
+
+
+			<h6 id="college"> SMR Relay </h6>
+			
+			<div class="ptxtRight">
+				<h7> SWC Conference Championship </h7>
+				<video width="100%" height="100%" controls>
+					<source src="images/Track/IMG_2751.mov">
+				Your browser does not support the video tag.
+				</video>
+
+				<h7> Relay Team Members </h7>
+				<ol>
+					<li> 200 Meters - Tyler Davis </li>
+					<li> 200 Meters - Brian Ridzik </li>
+					<li> 400 Meters - Brett Scheutt </li>
+					<li> 800 Meters - Brad Bornn </li>
+				</ol>
+
+				<h7> Accolades </h7>
+				<ol>
+					<li> - Set School Record for SMR time </li>
+					<li> - 2nd Place SWC Conference Championship </li>
+					<li> - 4th Place Overall Class L State Championship </li>
+				</ol>
+			</div>
+		
+	</section>
+
+		
+	
+
+	<div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() 
+	{
+	  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) 
+	  {
+		document.getElementById("cornerBtn").style.display = "block";
+	  } 
+	  else 
+	  {
+		document.getElementById("cornerBtn").style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+	
+	<footer>
+		<p>&copy; <span id="copyright"></span> Tyler Davis Productions</p>
+	</footer>
+
+</body>
+</html>

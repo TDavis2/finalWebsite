@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Family </title>
+
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="styles/nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="styles/family.css" type="text/css" media="screen" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+</head>
+
+<body>
+	<header class="clearfix">
+		<h2><a href="index.html"> Home </a></h1>
+		
+	</header>
+
+	<nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+        	<li><a href="football.html"> Football </a></li>
+        	<li><a href="baseball.html"> Baseball </a></li>
+        	<li><a href="track.html"> Track </a></li>
+			<li><a href="family.html"> Family </a></li>
+			
+    	</ul>
+	</nav>
+
+	<h1 style="margin-top:15px;" align="center"> Family </h1>
+
+	<div id="wrapper">
+
+		<div class="slider-wrapper theme-default">
+
+			<div id="slider" class="nivoSlider">
+				<img src="images/Family/IMG_2277.jpg" data-thumb="images/Family/IMG_2277.jpg" alt="">
+				<img src="images/Family/IMG_6580.jpg" data-thumb="images/Family/IMG_6580.jpg" alt="" title="This is an example of a caption">
+				<img src="images/Family/IMG_3275.jpg" data-thumb="images/Family/IMG_3275.jpg">
+				<img src="images/Family/IMG_3276.jpg" data-thumb="images/Family/IMG_3276.jpg" alt="" title="#htmlcaption4">
+			</div>
+
+			<div id="htmlcaption4" class="nivo-html-caption">
+				<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+			</div>
+
+		</div>
+
+	</div>
+
+	<!----------------- Runs the Slideshow ------------------>
+	<script type="text/javascript">
+		$(window).load(function()
+		{
+			$('#slider').nivoSlider();
+		});
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This sentence will appear under the link in search engine results.">
+	<meta name="keywords" content="list,of,words,separated,by,commas,that,describe,your,site">
+	<meta name="author" content="Tyler Davis">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shiv which should be a shim -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- tab title -->
+	<title> My Athletic Career </title>
+
+	<!-- favicon link -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+
+    <!-- slicknav -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>   <!-- Link to jQuery Content Delivery Network - Necessary for SlickNav to work correctly -->
+    <script src="js/jquery.slicknav.min.js"></script>                     <!-- Link to the slicknav file inside the js folder - Necessary for SlickNav to work correctly -->
+
+	<!-- slicknav javascript - this javascript code will use the UL inside the nav_menu tag to build the same menu in slickNav format -->
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('.nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    </script>
+
+</head>
+
+
+<body>
+
+	<header class="clearfix">
+		<a href="index.html"></a>
+		<h1><a href="index.html"> My Athletic Career </a></h1>
+	</header>
+
+    <nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+        	<li><a href="football.html"> Football </a></li>
+        	<li><a href="baseball.html" class="current"> Baseball </a></li>
+        	<li><a href="track.html" class="current"> Track </a></li>
+			<li><a href="family.html" calss="current"> Family </a></li>
+    	</ul>
+	</nav>
+
+	<section id="homepage">
+		<h3> About </h3>
+
+		<p>
+			Sports have had an immeasurable impact on my life since I was old enough to walk. Without sports I can say with absolute confidence I would not be the person that I am today. I have played multiple sports my entire life and to attribute my growth and development as a person to any one sport in particular would be misleading. I continue to play football in college, however I also continued my baseball career into the collegiate level before having to make the difficuly decision to stick with football over baseball. There are countless other sports that I won't focus on on this website that still hold a special place in my heart. This website is purely dedicated to the three sports that have made the most profound impact on me as a person throuh the coaches I have had, friends I have met and lessons I have learned along the way. 
+		</p>
+		<p id="signature"> - Tyler Davis</p>
+
+	</section>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> Tyler Davis Productions</p>
+	</footer>
+
+</body>
+</html>
